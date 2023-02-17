@@ -1,0 +1,121 @@
+/* global styles */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  /* header styles */
+  header {
+   
+    align-items: center;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    margin: 0%;
+    border: 0px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  header button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  #mypage{
+    padding-top: 1%;
+    text-align: center;
+  }
+  #mypage a{
+    text-decoration: #020202;
+    color: #050404;
+    font-family: serif;
+  }
+  /* Menu */
+  #menu{
+    background: #020202;
+    padding: 6px 40px 6px 40px;
+    text-align: center;
+  }
+  #menu a{
+    color : #c5d6db;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Arial Narrow";  
+  }
+  #menu a:hover{
+    color: #10a2f7;
+  }
+  /* Main Content */
+  main{
+    padding-top: 5%;
+  }
+  /* form styles */
+  form {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  form input[type="text"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  /* content styles */
+  .container {
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  /* home page styles */
+  h2 {
+    margin-top: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: 1rem;
+  }
+  /* logout button styles */
+  .logout {
+    text-align: right;
+    margin-top: 1rem;
+  }
+  .logout button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
