@@ -12,7 +12,7 @@ loginForm.addEventListener('submit', (event) => {
 webengage.user.setAttribute('we_email', 'heenashaikh1.nmims@gmail.com'); //system user attribute
 webengage.user.setAttribute('we_birth_date', '1993-03-11');//system user attribute
 webengage.user.setAttribute('we_phone', '+919619377730');//system user attribute
-webengage.user.setAttribute("Age", 29); //custom user attribute
+webengage.user.setAttribute("Age", "29"); //custom user attribute, specified as string
   } else {
     alert('Invalid username or password');
   }
