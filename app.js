@@ -27,7 +27,7 @@ webengage.user.setAttribute("Age", "29"); //custom user attribute, specified as 
     webengage.user.setAttribute('we_phone', '+919930945534');//system user attribute
 webengage.user.setAttribute("Age", "24"); //custom user attribute, specified as string
    }  
-   else if(username === 'hussain'){
+   else{
     webengage.user.login('U-03'); //this is the unique user identifier being used here
     webengage.user.setAttribute('we_email', 'hussain@gmail.com'); //system user attribute
     webengage.user.setAttribute('we_first_name', 'Hussain'); //system user attribute
