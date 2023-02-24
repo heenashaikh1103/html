@@ -5,15 +5,39 @@ loginForm.addEventListener('submit', (event) => {
   event.preventDefault();
   const username = event.target.querySelector('input[type="text"]').value;
   const password = event.target.querySelector('input[type="password"]').value;
-  if (username === 'heena' && password === '123') {
+  if ((username === 'heena' && password === '123') || (username === 'haf' && password === '456')||(username === 'hussain' && password === '789')){
     sessionStorage.setItem('loggedIn', true);
     window.location.replace('home.html');
+
+    if(username === 'heena'){
     webengage.user.login('U-01'); //this is the unique user identifier being used here
-webengage.user.setAttribute('we_email', 'heenashaikh1.nmims@gmail.com'); //system user attribute
-webengage.user.setAttribute('we_birth_date', '1993-03-11');//system user attribute
-webengage.user.setAttribute('we_phone', '+919619377730');//system user attribute
+    webengage.user.setAttribute('we_email', 'heenashaikh1.nmims@gmail.com'); //system user attribute
+    webengage.user.setAttribute('we_first_name', 'Heena'); //system user attribute
+    webengage.user.setAttribute('we_last_name', 'Shaikh'); //system user attribute
+    webengage.user.setAttribute('we_birth_date', '1993-03-11');//system user attribute
+    webengage.user.setAttribute('we_phone', '+919619377730');//system user attribute
 webengage.user.setAttribute("Age", "29"); //custom user attribute, specified as string
-  } else {
+  }
+   else if(username === 'haf'){
+    webengage.user.login('U-02'); //this is the unique user identifier being used here
+    webengage.user.setAttribute('we_email', 'haf@gmail.com'); //system user attribute
+    webengage.user.setAttribute('we_first_name', 'Hafsha'); //system user attribute
+    webengage.user.setAttribute('we_last_name', 'Shaikh'); //system user attribute
+    webengage.user.setAttribute('we_birth_date', '2000-03-14');//system user attribute
+    webengage.user.setAttribute('we_phone', '+919930945534');//system user attribute
+webengage.user.setAttribute("Age", "24"); //custom user attribute, specified as string
+   }  
+   else if(username === 'hussain'){
+    webengage.user.login('U-03'); //this is the unique user identifier being used here
+    webengage.user.setAttribute('we_email', 'hussain@gmail.com'); //system user attribute
+    webengage.user.setAttribute('we_first_name', 'Hussain'); //system user attribute
+    webengage.user.setAttribute('we_last_name', 'Shaikh'); //system user attribute
+    webengage.user.setAttribute('we_birth_date', '2019-07-24');//system user attribute
+    webengage.user.setAttribute('we_phone', '+919833551038');//system user attribute
+webengage.user.setAttribute("Age", "35"); //custom user attribute, specified as string
+   }  
+  }
+    else {
     alert('Invalid username or password');
   }
 });
