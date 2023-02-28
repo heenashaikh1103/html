@@ -62,3 +62,9 @@ function logout() {
 }
 // redirect to login page if not logged in
 requireLogin();
+function send() {
+  alert("Message sent successfully");
+webengage.track("Send Button click", {
+  "Product ID" : "AXK1337",
+  });
+}
