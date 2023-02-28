@@ -9,7 +9,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>
+  <body onload="requireLogin()">
     <header>
         <h2 id="mypage"><a href="home.html">www.mypage.com</a></h2>
             <nav id="menu">
@@ -35,7 +35,7 @@
         <input type="email" id="email" name="email">
         <label for="message">Message:</label>
         <textarea id="message" name="message"></textarea>
-        <button type="submit">Send</button>
+        <button type="submit" onclick="send()">Send</button>
       </form>
     </main>
     <footer>
